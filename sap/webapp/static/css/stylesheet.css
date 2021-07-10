@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&effect=3d-float&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+html{
+    height: auto;
+    min-height: 100%; /*para que el gradiente no se vea duplicado*/
+}
+body{
+    background: linear-gradient(to bottom right,#d8e2dc,#f8edeb);
+}
+#mainTitle{
+    text-align: center;
+    color:rgb(233, 157, 169);
+     text-shadow: -4px 1px 1px #c0c9a5;
+}
+.contenedor{
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+
+/*Imagen*/
+#mainImg{
+    width: 100%; /*Ocupa el 100% del div contenedor*/
+    opacity: .6;
+    border-radius: 25px;
+}
+#mainImg:hover{
+    opacity: 1;
+}
+.font-effect-3d-float{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 59px;
+    font-family: 'Staatliches', cursive;
+}
+.contenedor p{
+    display: none; /*lo oculta*/
+}
+.contenedor:hover p{
+    position: absolute; /*lo muestra*/
+    text-align: center;
+    width: 100%; /*toma todo el ancho de su contenedor*/
+    top: 45%;
+    display: inline-block;
+    color: aliceblue;
+    font-size: xx-large;
+
+    font-family: 'Bellefair', serif;
+}
